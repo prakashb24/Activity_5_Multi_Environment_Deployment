@@ -15,8 +15,8 @@ jobs:
  - name: docker login
  uses: docker/login-action@v3
  with:
- username: ${{secrets.USERNAME}}
- password: ${{secrets.PASSWORD}}
+ username: ${{secrets.username}}
+ password: ${{secrets.password}}
  LogintodockerhubQA:
  runs-on: ubuntu-latest
  environment: QA
@@ -25,5 +25,5 @@ jobs:
  - name: docker login
  uses: docker/login-action@v3
  with:
- username: ${{secrets.USERNAME}}
- password: ${{secrets.PASSWORD}}
+ username: ${{secrets.username}}
+ password: ${{secrets.password}}
